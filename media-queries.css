@@ -1,0 +1,72 @@
+@media only screen and (max-width: 600px){
+	
+	body::-webkit-scrollbar { 
+    display: none;  /*---To hide scrollbar------*/
+    }
+ 
+	#my-name{
+		font-size: 70px;
+	}
+
+	#about-details{
+		width: 90%;
+		font-size: 22px;
+		margin-top: -1px;
+	}
+
+	.skills-display{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-top: -60px;
+	}
+
+	.skill-progress{
+		width: 40%;
+		height: 30px;
+	}
+    
+    .experience-title, .education-title{
+    	font-size: 14px;
+    }
+
+	.company-name, .work-period, .branch-name{
+       font-size: 10px;
+	}
+
+	#images-section img{
+		height: 100px;
+		width: 200px;
+	}
+
+	.text{
+		height: 100px;
+		width: 200px;
+		font-size: 20px;
+	}
+
+
+	#form-section{
+		margin-top: -30px;
+	}
+
+	input, textarea{
+		width: 200px;
+		margin-left: -100px;
+	}
+    
+    button{
+       margin-left: -100px;
+    }
+
+	#address-section{
+		margin-top: -65px;
+		font-size: 12px;
+	}
+
+	#address-section h3{
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+}

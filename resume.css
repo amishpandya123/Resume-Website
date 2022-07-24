@@ -1,0 +1,350 @@
+body{                   /*To remove the default margin and padding given by browser*/
+    margin: 0px;
+    padding: 0px;
+}
+
+/*------------------------header section--------------------------*/
+#body-header{
+	height: 75vh;                                   /*setting the height of the image*/
+    background-image: url("https://wallpaperaccess.com/full/279547.jpg");
+    background-attachment: fixed;                   /*for effect of parallax*/
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;                                   /*for bluring the background image*/
+    margin-top: -40px;                                   
+ }
+
+ /*-------------------Horizontal list section (navigation)------------*/
+
+ .horizontal-list{
+ 	list-style: none;                               /* to remove the bullets of the list*/
+ 	text-align: center; 
+ 	font-size: 25px; 
+ 	padding: 23px;
+ }
+
+ .horizontal-list li{                               /*using nesting it means that horizontal list in undar list items ma changes karvna che. It means list ma jetli pan list items hase a badhi inline thai jase. We have not use display in horizontal list id because if i do so then the content after the list will be inline with it.*/
+ 	display: inline;
+ 	margin: 0px 8px 8px 0px;
+ 	padding: 7px;                                   /*List items na vache ni spacing*/
+ }
+
+ .horizontal-list li a{                             /*Changing the properties of anchor tag so that they dont look like blue and underlined*/  
+ 	color: white;
+ 	text-decoration: none;
+ }
+
+ .nav-menu li a{                                    /*Made this because if i place and hover part in horizontal list then it will affect the icons also so i made a specific class and apply that in that tag in which i wanted*/
+    transition: color 0.5s, border-bottom 4s;
+ }
+
+ .nav-menu li a:hover{                              /*Changing the properties of anchor tag so that they dont look like blue and underlined*/  
+ 	color: skyblue;                                 /*Remember not to give space writing hover*/
+ 	border-bottom: 4px solid skyblue;
+ }
+
+ #my-name{
+    color: white;
+    font-size: 75px;
+    font-style: initial;
+    font-weight: 200px;
+    text-align: center;
+    padding-top: 100px;                            /*for aligning down from the navigation bar*/
+    margin: -150px -100px -100px -100px;           /*Align center na lidhe aju baju margin ayi gayi etle ene remove karva -100px use kari*/
+ }
+
+.social-icons li a i{
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 1px white;             /*vertical-offset|horizontal-offset|blur|spread|color*/
+    
+}
+
+section{                               /*Ane upar j kari nakhyu so agar koi section ma change karvo hase so niche hase ho eni par priorit hisab thi changes thase*/
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n){
+background-color: white;
+}
+
+section:nth-child(2n+1){
+    background-color: aliceblue;
+}
+
+.section-heading{
+    width: auto;
+    margin: 10px auto;
+    padding: 10px 20px 20px;
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+/*--------------------------About-details----------------------------*/
+
+#my-image{                                         /*To display image on center*/
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: -140px;                           /*To bring the image on the background image(To bring the image upwards)*/
+    position: relative;                           /*Because the background image and my image don't mix with each other, they should overlap*/
+}
+
+#about-details{
+    margin: 30px 20% 100px 20%;
+    font-size: 25px;
+}
+
+/*Skills section*/
+.skills-display{
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -40px;
+}
+
+.skill-progress{
+    width: 500px;
+    height: 100 px;
+    background-color: lightgrey;
+    border-radius: 9px;
+    margin: 20px;
+}
+
+.skill-progress>div{   /*This syntax will only affect to direct (first) child of skill-progress, direct child means je pela div avse ej ena andar na divs affect nai thai*/
+  border-radius: 9px 0px 0px 9px;
+}
+
+.skill-name span{
+  color: white;
+  font-size: x-large;
+  padding: 10px;
+}
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.mb-sandy{
+    background-color: #EFC050;
+}
+
+.mb-peach{
+    background-color: #FF6F61;
+}
+
+.mb-green{
+    background-color: #88B04B;
+}
+
+.mb-inkwell{
+    background-color: #363945;
+}
+
+.mb-lightred{
+    background-color: lightpink;
+}
+
+/*------------------------------Percentage classes--------------------------*/
+.eighty-five-percent{        /*Will set it width and height in respect with it's parent div*/
+  width: 85%;
+  height: 100%;
+}
+
+.ninty-percent{
+width: 90%;
+  height: 100%;
+}
+
+.seventy-five-percent{
+width: 75%;
+  height: 100%;
+}
+
+.eighty-percent{
+width: 80%;
+  height: 100%;
+}
+
+.seventy-one-percent{
+width: 71%;
+  height: 100%;
+}
+
+.seventy-percent{
+width: 75%;
+  height: 100%;
+}
+
+
+/*-------------------Experience Section and Education section----------------------*/
+
+.timeline{
+    position: relative;
+    width: 90%;
+    max-height: 600px;
+    margin-top: -85px;
+}
+                                                /*First of all make borders of timeline and timelines boxes so that you can get idea about the area after completion of the work remove borders*/
+.timeline-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    height: 113px;
+}
+
+.timeline-box:nth-child(2n){
+left: 57%;
+}
+
+.timeline-divider{
+   position: absolute;
+   height: 90%;
+   width: 0;
+   border: 3px dashed red;
+   top: 5%;
+   left: 50%;
+}
+
+.timeline-traveller{
+  position: sticky;
+  top: 25%;
+  transform: rotate(90deg);              /*Intitally plane was towards left so to rotate it*/
+
+}
+
+.work-period{
+    margin-left: 20px;
+    color: grey;
+}
+
+.work-period p{
+    margin-left: 20px;
+}
+
+.education-title,.experience-title{      /*way to edit multiple class*/
+color: royalblue;
+font-weight: bold;
+font-size: 20px;
+}
+
+.company-name, .branch-name{
+    margin-left: 20px;
+    color: orange;
+}
+
+
+/*------------------------Portfolio section----------------------*/
+#images-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -80px;
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+.img-text{
+    position: relative;
+    height: auto;
+    width: auto;
+}
+.portfolio-img{
+    margin: 10px 15px 10px 15px;
+}
+
+.text{
+    opacity: 0;
+    position: absolute;                          /*This is imp as we have to hide the text over image so here position will be absolute and the div in which both img and text is there should be relative*/
+    top: 0;
+    left: 5;
+    font-size: large;
+    color: red;
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 300px;                                /*Note: Je size image ni hoi aj size ani levani*/ 
+    height: 160px;
+    margin-top: 10px;                            /*To align set with the image*/
+    margin-left: 15px;           
+    text-align: center;
+}
+
+.text:hover{
+    opacity: 1;
+    box-shadow: 0px 0px 0px 2px cyan;
+}
+
+/*-------------------------Contact section----------------------------*/
+#contact{
+    border: 2px solid black;
+    background:  linear-gradient(270deg,#4158D0,#C850C0,#FFCC70);
+
+}
+
+#form-address{
+    display: flex;
+    margin-top: -10px;
+}
+
+#form-section{
+width: 60%;
+margin-right: -60px;
+margin-left: 120px;
+}
+
+#address-section{
+width: 40%;
+margin-top: -30px;
+margin-left: -100px;
+
+}
+
+input, textarea{    /*To make the input boxes transparent*/
+    border: none;
+    width: 400px;
+    border-bottom: 2px solid black;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    width: 450px;
+    margin-top: -30px;
+}
+
+button{
+font-size: 15px; 
+outline: none;
+background: none;
+text-align: center;
+border: 2px solid black;
+border-radius: 8px;
+transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.details-text{
+font-size: 15px;
+font-weight: normal;    /*To remove the boldness of the text*/
+}
